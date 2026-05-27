@@ -9,10 +9,10 @@ Ig ill update some stuff here and there
 
 - ✅ **Get Gold**
 - ✅ **Set User Level**
-- ❌ **Unlock All Items (Unlock All Furniture Included)**
+- ✅ **Unlock All Items (Unlock All Furniture Included)**
 - ✅ **Unlock All Pets**
 - ❌ **Health Hack (Player)**
-- ❌ **Free Membership**
+- ✅ **Free Membership**
 - ❌ **Get and Use Magic Coins**
 - ❌ **Set Grade**
 - ❌ **Set Tower**
