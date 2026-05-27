@@ -7,10 +7,10 @@ Ig ill update some stuff here and there
 ⚠️ indicates semi-working ("to an extent") features<br>
 ❌ indicates unfixed features<br>
 
-- ❌ **Get Gold**
+- ✅ **Get Gold**
 - ✅ **Set User Level**
 - ❌ **Unlock All Items (Unlock All Furniture Included)**
-- ❌ **Unlock All Pets**
+- ✅ **Unlock All Pets**
 - ❌ **Health Hack (Player)**
 - ❌ **Free Membership**
 - ❌ **Get and Use Magic Coins**
