@@ -20,17 +20,10 @@
     return `${h(b[0])}${h(b[1])}${h(b[2])}${h(b[3])}-${h(b[4])}${h(b[5])}-${h(b[6])}${h(b[7])}-${h(b[8])}${h(b[9])}-${h(b[10])}${h(b[11])}${h(b[12])}${h(b[13])}${h(b[14])}${h(b[15])}`;
   };
 
-  const getPlayer = () => {
-    const map = Boot?.prototype?.game?.state?._current?._currentScene
-      ?.container?.sourceContainer?._bindingDictionary?._map;
-    return map?.get("MainPlayerGameObject")?.[0]?.cache?._components?.[18]
-      ?._playerProvider?._player ?? null;
-  };
-
   const jwtToken = sessionStorage.getItem("JWT_TOKEN")?.replace(/^Bearer\s+/, "");
   const decodeJWT = tok => JSON.parse(atob(tok.split(".")[1]));
 
-  const player = getPlayer();
+  const player = Boot.prototype.game._state._current.user.source;
   if (!player)    return alert("Player not found.");
   if (!jwtToken)  return alert("JWT token missing.");
 
