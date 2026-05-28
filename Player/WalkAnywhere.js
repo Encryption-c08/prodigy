@@ -1,17 +1,14 @@
 (async () => {
-  const input = prompt("What do you want your walkspeed to be? (default is 0.25)");
-  if (input === null) return;
-
-  const speed = Number(input);
-  if (!isFinite(speed)) return alert("Not a valid number.");
-
   try {
-    const user = Boot.prototype.game._state._current.user;
-    user.speed = speed;
-    if (user.locomotion) user.locomotion.speed = speed;
-    if (user.walkSpeed !== undefined) user.walkSpeed = speed;
+    const area = Boot.prototype.game._state._current.user.locomotion.screen.area;
 
-    alert(`Walkspeed set to ${speed}.`);
+    if (!area) return alert("Area not found.");
+
+    for (let i = 0; i < area.length; i++) {
+      area[i] = Array(64).fill(1);
+    }
+
+    alert("Enabled.");
   } catch (e) {
     console.error(e);
     alert("Error: Check console.");
